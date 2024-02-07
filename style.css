@@ -1,9 +1,16 @@
 body {
   font-family: '';
+  background-image: url(community.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: 250px 250px ; 
 }
 
 .header {
   margin-left: 10px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
 }
 
 header {
@@ -15,14 +22,17 @@ header {
 }
 
 .nav-items {
+  align-items: center;
   list-style: none;
+  margin-right: 150px;
 }
 
 .nav-items li {
   display: inline-block;
   padding: 2px 15px;
+  font-size: 20px;
 }
 
 .nav-items li a:hover {
-  color: orange;
+  color: rgb(187, 123, 5);
 }
