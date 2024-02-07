@@ -1,0 +1,28 @@
+body {
+  font-family: '';
+}
+
+.header {
+  margin-left: 10px;
+}
+
+header {
+  background-color: lightblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 15px;
+}
+
+.nav-items {
+  list-style: none;
+}
+
+.nav-items li {
+  display: inline-block;
+  padding: 2px 15px;
+}
+
+.nav-items li a:hover {
+  color: orange;
+}
