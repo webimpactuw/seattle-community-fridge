@@ -52,7 +52,7 @@
   transition: 0.3s ease-in;
 }
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 700px) {
   .home {
     justify-content: center;
     align-items: center;
@@ -65,7 +65,6 @@
     width: 80%;
     display: flex;
     justify-content: center;
-    align-items: center;
     flex-direction: column;
     background-color: #121619;
     color: white;
@@ -74,13 +73,11 @@
   .headerContainer h1 {
     font-size: 40px;
     height: 30px;
-    color: white;
+    color: black;
   }
 
   .headerContainer p {
     font-size: 30px;
-    color: white;
+    color: black;
   }
-
-  
 }
