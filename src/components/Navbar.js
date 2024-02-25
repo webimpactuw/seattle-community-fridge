@@ -33,8 +33,7 @@ function Navbar() {
         <Link to="/About Us">About Us</Link>
         <Link to="/GetInvolved">Get Involved</Link>
         <Link to="/Volunteer">Volunteer</Link>
-        <Link to="/Contact">Contact</Link>      
-        {/* <Link to="/Donate">Donate</Link> */}
+        <Link to="/Contact">Contact</Link>
         <button onClick={toggleNavbar}>
         <ReorderIcon />
         </button>

@@ -57,6 +57,7 @@
 .navbar #open .hiddenLinks {
   display: inherit;
   margin-left: 30px;
+  font-size: 10px;
 }
 
 .navbar #close .hiddenLinks {
