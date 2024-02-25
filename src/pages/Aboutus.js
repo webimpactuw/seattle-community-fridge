@@ -1,6 +1,7 @@
 import React from 'react'
 import '../styles/Aboutus.css';
-import BannerImage from '../assets/SeattleProject.png';
+// import BannerImage from '../assets/SeattleProject.png';
+
 function Aboutus() {
   return (
     <div className='about'>
@@ -17,7 +18,7 @@ function Aboutus() {
         <button>
           Get Involved
         </button>
-        <a href="https://account.venmo.com/u/seattlecommunityfridge" target="_blank">
+        <a href="https://account.venmo.com/u/seattlecommunityfridge" target="_blank" rel="noreferrer">
         <button>Donate here</button>
         </a>
         <button>
