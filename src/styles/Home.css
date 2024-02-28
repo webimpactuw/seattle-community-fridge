@@ -51,30 +51,33 @@
 
 @media only screen and (max-width: 700px) {
   .home {
-    justify-content: center;
-    align-items: center;
+    padding: 10px; 
+    height: auto; 
+  }
+  .text-above {
+    margin-bottom: 20px; 
+    width: 85%; 
+  }
+  .text-above p {
+    font-size: 14px; 
+  }
+
+  .fridges-section h2 {
+    font-size: 18px; 
+  }
+  .map iframe {
+    width: 100%; 
+    height: 300px; 
+  }
+
+  .locations-buttons button {
+    padding: 8px 15px; 
+    font-size: 14px; 
+    margin: 5px; 
+  }
+
+  .locations-buttons {
+    gap: 5px; 
   }
   
-  .headerContainer {
-    margin-left: 0px;
-    border-radius: 10px;
-    padding: 10px;
-    width: 80%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    background-color: #121619;
-    color: white;
-  }
-
-  .headerContainer h1 {
-    font-size: 40px;
-    height: 30px;
-    color: black;
-  }
-
-  .headerContainer p {
-    font-size: 30px;
-    color: black;
-  }
 }
