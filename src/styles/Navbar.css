@@ -65,6 +65,7 @@
 }
 
 .navbar #open a {
+  font-size: 12px;
   width: 70px;
   margin: 5px;
 }

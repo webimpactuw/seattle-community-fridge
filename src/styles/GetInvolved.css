@@ -34,12 +34,12 @@
   
   
   @media only screen and (max-width: 650px) {
-    .options-container {
+    .options {
       flex-direction: column;
       gap: 10px; 
     }
   
-    .get-involved-container {
+    .get-involved {
       align-items: center; 
     }
   }

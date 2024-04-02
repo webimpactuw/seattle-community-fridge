@@ -1,9 +1,7 @@
-
-.about {
+.about-us {
   width: 100%;
-  height: 90vh;
+  height: auto; 
   display: flex;
-  align-items: left;
   flex-direction: column;
   background-position: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
@@ -27,13 +25,7 @@
   font-size: 20px;
 }
 
-.headerContainer button:hover {
-  background-color: #07090a;
-  cursor: pointer;
-  transition: 0.3s ease-in;
-}
-
-.headerContainer p {
+.about-us p {
   font-size: 25px;
   width: 50%;
 }
