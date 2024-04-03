@@ -7,6 +7,9 @@
   background-color: #FEFAE0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+body {
+  background-color: #FEFAE0;
+}
 
 .headerContainer {
   width: auto;

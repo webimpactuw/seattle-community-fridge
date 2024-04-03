@@ -1,6 +1,5 @@
 import React from 'react'
 import '../styles/Aboutus.css';
-// import BannerImage from '../assets/SeattleProject.png';
 
 function Aboutus() {
   return (

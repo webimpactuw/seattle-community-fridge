@@ -2,11 +2,12 @@ import React from 'react'
 import '../styles/Home.css';
 function Home() {
   return (
-    <div className="home">
+    <body>
+      <div className="home">
       <div className="text-above"> 
-        <p>Seattle free food comidas gratas 免费食物 無料の食事 ‘ai 
-          Community đồ ăn miễn phí 無料の食事 đồ ăn miễn phí
-          Fridges nourriture gratuite อาหารฟรี ʻai manuahi đồ ăn
+        <p> <span>Seattle </span>free food comidas gratas 免费食物 無料の食事 ‘ai<br />
+          <span>Community</span> đồ ăn miễn phí 無料の食事 đồ ăn miễn phí <br />
+          <span> Fridges</span> nourriture gratuite อาหารฟรี ʻai manuahi đồ ăn
         </p> 
       </div>
       <div className="fridges-section">
@@ -29,6 +30,7 @@ function Home() {
         </p>
       </div>
     </div>
+    </body>
   )
 }
 
