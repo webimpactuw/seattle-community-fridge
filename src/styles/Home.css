@@ -39,6 +39,12 @@
   font-size: 40px;
 }
 
+.fridge-stock {
+  float: right;
+  color:#DDA15E;
+  font-weight: 400;
+}
+
 .locations-buttons {
   display: flex;
   flex-wrap: wrap;

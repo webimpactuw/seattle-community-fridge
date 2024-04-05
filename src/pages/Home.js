@@ -11,7 +11,11 @@ function Home() {
         </p> 
       </div>
       <div className="fridges-section">
-        <h2>Our Fridges</h2>
+        <h2>Our Fridges
+        <span className='fridge-stock'>
+            Click on a fridge to see its current stock.
+        </span>
+          </h2> 
         <div className="locations-buttons">
           <button>Rainier Valley</button>
           <button>University Heights Center</button>
