@@ -5,17 +5,21 @@ function Home() {
     <body>
       <div className="home">
       <div className="text-above"> 
-        <p> <span>Seattle </span>free food comidas gratas 免费食物 無料の食事 ‘ai<br />
-          <span>Community</span> đồ ăn miễn phí 無料の食事 đồ ăn miễn phí <br />
+        <p><span>Seattle</span> free food comidas gratas 免费食物 無料の食事 ‘ai<br/>
+          <span>Community     </span> đồ ăn miễn phí 無料の食事 đồ ăn miễn phí <br />
           <span> Fridges</span> nourriture gratuite อาหารฟรี ʻai manuahi đồ ăn
         </p> 
+        <hr className='text-above-line'/>
+        
       </div>
       <div className="fridges-section">
         <h2>Our Fridges
+          
         <span className='fridge-stock'>
             Click on a fridge to see its current stock.
         </span>
           </h2> 
+          <hr className='our-fridges-line'/>
         <div className="locations-buttons">
           <button>Rainier Valley</button>
           <button>University Heights Center</button>
