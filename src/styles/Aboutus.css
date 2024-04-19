@@ -1,43 +1,88 @@
 .about-us {
   width: 100%;
   height: auto; 
-  display: flex;
-  flex-direction: column;
-  background-position: center;
   background-color: #FEFAE0;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
+
+.about {
+  text-align: center;
+  margin-bottom: 0;
+  margin-left: 270px;
+  font-size: 40px;
+}
+
 body {
   background-color: #FEFAE0;
 }
 
-.headerContainer {
-  width: auto;
-  margin-left: 50px;
+
+.about-content {
+  display: flex; /* Use flexbox to arrange items horizontally */
+  align-items: flex-start; /* Align items to the start vertically */
+  max-width: 1000px; /* Set a maximum width for the content */
+  margin: 0 auto; /* Center the content horizontally */
 }
 
-.headerContainer button {
-  margin-right: 15px;
-  color: black;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  background-color: #8a9b01;
-  height: 70px;
-  width: 180px;
-  color: white;
-  text-decoration: none;
-  font-size: 20px;
+.about-photo {
+  border: 2px solid #000;
+  border-radius: 6px;
+  width: auto; /* Set width to auto to take the natural width of the image */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio */
+  max-width: 100%; /* Ensure the image doesn't exceed its container */
+  margin-right: 100px; /* Add margin to the right for spacing */
 }
 
-.about-us p {
-  font-size: 25px;
-  width: 50%;
+.aboutText {
+  width: 90%; /* Set width of the text to 90% of the container */
+  height: 90px; /* Set height of the text */
+  font-size: 30px; /* Adjust font size as desired */
+  text-align: left; /* Align text to the left */
+  margin-left: 20px; /* Add left margin for spacing */
 }
 
-@media only screen and (max-width: 650px) {
-  .aboutus {
-    justify-content: center;
-    align-items: center;
-  }  
+
+.how {
+  margin-top: 200px;
+  text-align: center;
+}
+
+
+.additional-photos {
+  height: 40vh;
+  display: flex;
+  justify-content: center; /* Align items to the center horizontally */
+  align-items: center; /* Align items to the center vertically */
+  gap: 80px; /* Space between items */
+  margin-top: 20px;
+}
+
+.additional-photos img {
+  border: 2px solid #000;
+  border-radius: 6px;
+}
+
+.about-bottom {
+  display: flex; /* Use flexbox */
+  justify-content: center; /* Align content horizontally at the center */
+  align-items: center; /* Align content vertically at the center */
+}
+
+p { 
+  font-size: 30px;
+  max-width: 80%; /* Limit the width of the paragraph */
+  text-align: center; /* Align text in the center */
+}
+
+
+@media screen and (min-width: 1200px) {
+  .aboutText {
+    width: 80%; /* Increase width to 80% on screens wider than 1200px */
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .aboutText {
+    width: 90%; /* Increase width to 90% on screens wider than 1600px */
+  }
 }
