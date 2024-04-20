@@ -1,6 +1,7 @@
 .home {
   width: 100vw;
-  height: 100vh;
+  min-height: 200vh;
+  overflow-y: auto;
   display: flex;
   justify-content: center;
   align-items:  center;
@@ -10,12 +11,13 @@
   background-size: cover;
   height: 100vh;
   background-color: #FEFAE0;
-  
   font-family: "Aleo", serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
+
+
 
 .text-above span {
   color: #606C38;
@@ -30,6 +32,11 @@
   font-size: 45px;
   font-weight: 600;
   margin-right: 60px;
+  padding: 30px;
+}
+
+.text-above p {
+  margin-bottom: 20px; /* Increase margin between paragraphs */
 }
 
 .text-above hr {
@@ -40,6 +47,7 @@
   background-color: #DDA15E;
   color: #DDA15E;
   border: none;
+  margin: 20px auto; 
 }
 
 .our-fridges-line {
@@ -73,6 +81,7 @@
   gap: 10px;
   margin-top: 30px;
   margin-bottom: 35px;
+  width: 100%;
 }
 
 .locations-buttons button {
@@ -91,6 +100,33 @@
   margin-top: 20px;
 }
 
+.map {
+  width: 80%;
+  padding: 20px;
+}
+
+.map iframe {
+  width: 100%;
+  height: 400px;
+  border: 0;
+}
+
+.free-food {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.freefood-header {
+  text-align: center;
+}
+
+.freefood-text {
+  text-align: center;
+  font-size: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
 
 
 .locations-buttons button:hover {
@@ -103,6 +139,7 @@
     padding: 10px; 
     justify-content: center;
     align-items: center;
+    min-height: 200vh;
   }
 
   .text-above {
@@ -111,6 +148,7 @@
   }
 
   .text-above p {
+     margin-bottom: 10px;
     font-size: 14px; 
   }
 
