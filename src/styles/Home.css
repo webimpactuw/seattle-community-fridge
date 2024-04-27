@@ -17,6 +17,9 @@
   font-style: normal;
 }
 
+body {
+  width: 100%;
+}
 
 .home h2 {
   margin-top: 0;
@@ -31,6 +34,7 @@
 }
 
 .text-container {
+  margin-top: 600px;
   display: inline-block;
   width: auto; /* Adjust width as needed */
 }
@@ -171,37 +175,130 @@
   transition: 0.5s;
 }
 
-@media only screen and (max-width: 700px) {
+
+@media screen and (max-width: 600px) {
   .home {
     padding: 10px; 
     justify-content: center;
     align-items: center;
-    min-height: 200vh;
+  }
+
+  .text-container {
+    margin-top: 0;
   }
 
   .text-above {
-    margin-bottom: 20px; 
-    width: 85%; 
+    width: 90%;
+    margin-top: 60px; /* Adjust top margin to create space below the nav bar */
+    text-align: center;
   }
 
   .text-above p {
-     margin-bottom: 10px;
-    font-size: 14px; 
+    font-size: 14px;
+    margin-bottom: 10px;
   }
 
-  .fridges-section h2 {
+  .fridges-section,
+  .free-food,
+  .get-involved {
+    text-align: center; /* Center the content */
+    width: 80%; /* Set a smaller percentage width */
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
+    padding: 0;
+  }
+
+  .home h2,
+  .fridges-section h2,
+  .free-food-header,
+  .get-involved-header {
     font-size: 18px; 
   }
 
+  .free-food-text,
+  .get-involved-text {
+    font-size: 14px;
+    text-align: left;
+    color: #606C38;
+  }
+
   .map iframe {
+    margin-top: 0;
     width: 100%; 
-    height: 300px; 
+    height: 200px; 
   }
 
   .locations-buttons button {
-    padding: 8px 15px; 
-    font-size: 14px; 
-    margin: 5px; 
+    padding: 6px 12px; /* Reduce padding */
+    font-size: 12px; /* Reduce font size */
+    margin-bottom: 0;
+  }
+
+  .locations-buttons {
+    gap: 5px; 
+  }
+}
+
+
+@media only screen and (max-width: 2500px) {
+  .home {
+    padding: 10px; 
+    justify-content: center;
+    align-items: center;
+  }
+
+  .text-container {
+    margin-top: 0;
+  }
+
+  .text-above {
+    width: 90%;
+    margin-top: 60px; /* Adjust top margin to create space below the nav bar */
+    text-align: center;
+  }
+
+  .text-above p {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+
+  .free-food,
+  .get-involved {
+    text-align: center; /* Center the content */
+    width: 80%; /* Set a smaller percentage width */
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
+    padding: 0;
+  }
+
+  .fridges-section {
+    text-align: center; /* Center the content */
+    width: 47%; /* Set a smaller percentage width */
+    max-width: 100%; /* Ensure it doesn't exceed the screen width */
+    font-size: 30px;
+  }
+
+  .home h2,
+  .free-food-header,
+  .get-involved-header {
+    font-size: 18px; 
+  }
+
+  .free-food-text,
+  .get-involved-text {
+    font-size: 14px;
+    text-align: left;
+    color: #606C38;
+  }
+
+  .map iframe {
+    margin-top: 0;
+    width: 100%; 
+    height: 200px; 
+  }
+
+  .locations-buttons button {
+    padding: 6px 12px; /* Reduce padding */
+    font-size: 12px; /* Reduce font size */
+    margin-bottom: 0;
   }
 
   .locations-buttons {
