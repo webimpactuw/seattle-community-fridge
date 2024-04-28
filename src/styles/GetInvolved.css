@@ -6,21 +6,67 @@
     align-items: center; 
     padding: 20px;
     background-color: #FEFAE0;
-    height: 100vh;
+    height: 100%;
+  }
+
+  .get-involved h2 {
+    font-size: 40px;
+  }
+
+  .involved-text {
+    color: #606C38;
+
+  }
+
+  .top-row-photos {
+    height: 40vh;
+    display: flex;
+    justify-content: space-evenly; /* Align items to the center horizontally */
+    align-items: center; /* Align items to the center vertically */
+    gap: 100px; /* Space between items */
+  }
+
+  .top-row-photos img {
+    width: 450px;
+  }
+
+  .picture-captions {
+    margin-top: 60px;
+    display: flex;
+    gap: 650px;
+  }
+
+  .picture-captions p {
+    color: #606C38;
+    font-weight: 600;
   }
   
+  .row-text {
+    display: flex; /* Use flexbox to align items horizontally */
+    justify-content: space-evenly; /* Space items evenly along the main axis */
+    gap: 150px;
+  }
+
+  .small-paragraph {
+    font-size: 20px;
+    flex: 1; /* Allow paragraphs to grow and shrink within the flex container */
+    max-width: 20%; /* Limit the maximum width of the paragraphs */
+    margin: 0;
+    padding: 0;
+  }
+
+
   .options {
     display: flex;
-    justify-content: center; 
+    justify-content: space-evenly; 
     flex-wrap: wrap; 
-    gap: 15px; 
   }
   
   .get-involved-button {
     color: white;
     background-color: #8a9b01;
     border: none;
-    border-radius: 5px;
+    border-radius: 15px;
     cursor: pointer;
     height: 70px;
     width: 180px;
@@ -36,6 +82,24 @@
   
   
   @media only screen and (max-width: 650px) {
+    .get-involved {
+      width: 50%;
+    }
+
+    .top-row-photos {
+      display: flex; /* Use flexbox to align images horizontally */
+      justify-content: space-around; /* Distribute space evenly between images */
+      flex-wrap: wrap; /* Allow images to wrap to the next line if necessary */
+    }
+  
+    /* CSS for the images */
+    .involved-photo {
+      max-width: 100%; /* Ensure images don't exceed the width of their container */
+      height: auto; /* Maintain aspect ratio */
+      margin-bottom: 10px; /* Add some space between images */
+      width: 200px;
+    }
+
     .options {
       flex-direction: column;
       gap: 10px; 
@@ -44,4 +108,44 @@
     .get-involved {
       align-items: center; 
     }
+}
+
+@media screen and (min-width: 900px) {
+  .involved-photo {
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some space between images */
+    width: 200px;
   }
+}
+
+  
+@media screen and (min-width: 1000px) {
+
+  .top-row-photos {
+    gap: 400px;
+  }
+
+
+
+  .involved-photo {
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px; /* Add some space between images */
+    width: 600px;
+  }
+
+  .get-involved-button {
+    margin-top: 60px;
+    height: 70px;
+    width: 200px;
+  }
+
+  .options {
+    gap: 760px;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  
+}

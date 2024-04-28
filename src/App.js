@@ -3,6 +3,8 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import Aboutus from './pages/Aboutus';
 import GetInvolved from './pages/GetInvolved';
+import Guidelines from './pages/Guidelines';
+import Contact from './pages/Contact';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -15,6 +17,8 @@ function App() {
         <Route path='/' exact element={<Home />} />  
         <Route path='/About Us' exact element={<Aboutus />}/>
         <Route path = "/GetInvolved" exact element = {<GetInvolved/>} />
+        <Route path = "/Guidelines" exact element = {<Guidelines/>} />
+        <Route path = "/Contact" exact element = {<Contact/>} />
       </Routes>
       </Router>
     </div>
