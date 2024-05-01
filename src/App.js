@@ -5,9 +5,13 @@ import Aboutus from './pages/Aboutus';
 import GetInvolved from './pages/GetInvolved';
 import Guidelines from './pages/Guidelines';
 import Contact from './pages/Contact';
+import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
+  useEffect(() => {
+    document.title = "Seattle Community Fridge"; // Set the website name
+  }, []); 
   return (
     <div className="App">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>

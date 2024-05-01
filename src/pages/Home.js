@@ -1,6 +1,14 @@
 import React from 'react'
 import '../styles/Home.css';
+import { useState } from 'react';
+
 function Home() {
+  const [buttonClicked, setButtonClicked] = useState(false);
+
+  const handleClick = () => {
+    setButtonClicked(true);
+  };
+  
   return (
     <body>
       <div className="home">
@@ -40,7 +48,7 @@ function Home() {
             Take what you need, give what you can.
             </span>
           </h2> 
-
+          <hr className='food-line'/>
           <p className='free-food-text'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit sed risus sed scelerisque. Etiam sodales maximus neque, sed ornare eros posuere porta. Nunc dapibus dui sed massa aliquet maximus. 
             Nunc elementum, erat nec suscipit varius, est est lobortis neque, in tempus erat est sit amet lacus. Donec ipsum eros, vestibulum at massa ut, tempor porttitor nisl. Mauris rhoncus convallis accumsan. 
@@ -51,17 +59,21 @@ function Home() {
         
 
         <div className='get-involved'>
-        <h2>Get Involved
+          <h2 className='get-h2'>Get Involved
             <span className='get-involved-header'>
-            SCF is made possible by you.
+              SCF is made possible by you.
             </span>
           </h2> 
+          <hr className='get-line'/>
           <p className='get-involved-text'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit sed risus sed scelerisque. Etiam sodales maximus neque, sed ornare eros posuere porta. Nunc dapibus dui sed massa aliquet maximus. 
             Nunc elementum, erat nec suscipit varius, est est lobortis neque, in tempus erat est sit amet lacus. Donec ipsum eros, vestibulum at massa ut, tempor porttitor nisl. Mauris rhoncus convallis accumsan. 
             Curabitur rutrum posuere augue, quis volutpat nunc porttitor eget. Mauris rutrum arcu at ipsum iaculis pharetra.
           </p>
         </div>
+
+        <footer style={{ backgroundColor: '#DDA15E',  padding: '20px 20px', textAlign: 'center', width: '100%', height: '50px', marginTop: ' 60px' }}>
+        </footer>
       </div>
     </body>
   )

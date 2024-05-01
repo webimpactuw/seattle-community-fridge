@@ -1,6 +1,6 @@
 .home {
   width: auto;
-  min-height: auto;
+  min-height: 120vh;
   overflow-y: auto;
   display: flex;
   justify-content: center;
@@ -9,7 +9,6 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
   background-color: #FEFAE0;
   font-family: "Aleo", serif;
   font-optical-sizing: auto;
@@ -33,8 +32,8 @@ body {
   color: #606C38;
 }
 
-.text-container {
-  margin-top: 600px;
+.text-container { 
+  margin-top: 100px;
   display: inline-block;
   width: auto; /* Adjust width as needed */
 }
@@ -112,63 +111,89 @@ body {
 }
 
 .map {
-  width: 46%;
+  width: 48%;
   padding: 20px;
-  
 }
 
 .map-info {
-  border: 2px black;
+  border: 2px;
+  border-color: black;
+  border-radius: 8px;
 }
 
 .map iframe {
   width: 100%;
   height: 600px;
- 
+}
+
+.get-h2,
+.free-food h2 {
+  position: relative;
+}
+
+.free-food-header,
+ .get-involved-header {
+  margin-left: 30px;
+  color: #DDA15E;
+  font-weight: 400;
+}
+
+.free-food,
+ .home .get-involved {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: #DDA15E;
+    max-width: 1900px; /* Set a maximum width to limit the size of the div */
+    margin-right: 80px;
 }
 
 .free-food {
-  display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center items horizontally */
-  text-align: center;
-  color: #DDA15E; 
-  margin-right: 60px;
-  padding: 30px;
-  height: auto;
-  width: auto;
+  margin-bottom: 60px;
 }
 
-.free-food-header {
-  display: inline-block;
-  justify-content: space-between; 
+.food-line {
+  width: 10%;
+  margin-left: 382px;
+  margin-top: 0;
+  height: 4px;
+  background-color: #DDA15E;
   color: #DDA15E;
-  font-weight: 400;
-  width: auto;
+  border: none;
 }
 
-
-
-.free-food-text {
-  width: 80%;
-  text-align: left;
-  color: #606C38;
-}
-
-
-.get-involved-header {
-  display: inline-block;
-  justify-content: space-between; 
+.get-line {
+  width: 13%;
+  margin-left: 385px;
+  margin-top: 0;
+  height: 4px;
+  background-color: #DDA15E;
   color: #DDA15E;
-  font-weight: 400;
-  width: auto;
+  border: none;
 }
 
-.get-involved-text {
-  width: 80%;
-  text-align: left;
-  color: #606C38;
+
+
+.free-food-text,
+  .home .get-involved-text {
+
+    width: 70%;
+    text-align: left;
+    color: #606C38;
+    margin-left: 190px;
 }
+
+
+.free-food h2 {
+  font-size: 40px; /* Adjust the font size as needed */
+  margin-right: 190px;
+}
+
+.home .get-h2 {
+  margin-right: 340px;
+}
+
 
 .locations-buttons button:hover {
   background-color:  #606C38; 
@@ -238,70 +263,64 @@ body {
   }
 }
 
-
-@media only screen and (max-width: 2500px) {
+/* Media Query for Medium Devices (601px to 1200px) - Laptops */
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
   .home {
-    padding: 10px; 
-    justify-content: center;
-    align-items: center;
-  }
-
-  .text-container {
-    margin-top: 0;
+    padding: 20px; /* Adjust padding */
   }
 
   .text-above {
-    width: 90%;
-    margin-top: 60px; /* Adjust top margin to create space below the nav bar */
-    text-align: center;
+    width: 80%; /* Adjust width */
+    margin-top: 60px; /* Adjust top margin */
+    padding: 30px; /* Adjust padding */
   }
 
   .text-above p {
-    font-size: 30px;
-    margin-bottom: 10px;
+    font-size: 30px; /* Adjust font size */
+    margin-bottom: 20px; /* Increase margin between paragraphs */
   }
 
   .free-food,
   .get-involved {
-    text-align: center; /* Center the content */
-    width: 80%; /* Set a smaller percentage width */
+    width: 80%; /* Adjust width */
     max-width: 100%; /* Ensure it doesn't exceed the screen width */
-    padding: 0;
+    padding: 30px; /* Adjust padding */
+    margin-bottom: 30px; /* Increase margin between sections */
   }
 
   .fridges-section {
-    text-align: center; /* Center the content */
-    width: 47%; /* Set a smaller percentage width */
-    max-width: 100%; /* Ensure it doesn't exceed the screen width */
-    font-size: 30px;
+    width: 47%; /* Adjust width */
+    font-size: 30px; /* Adjust font size */
   }
 
   .home h2,
   .free-food-header,
-  .get-involved-header {
-    font-size: 18px; 
+  .get-involved-header,
+  .get-involved h2 {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .home .get-h2 {
+    font-size: 20px; /* Adjust font size */
   }
 
   .free-food-text,
   .get-involved-text {
-    font-size: 14px;
+    font-size: 14px; /* Adjust font size */
     text-align: left;
     color: #606C38;
   }
 
-  .map iframe {
+  .map {
     margin-top: 0;
-    width: 100%; 
-    height: 200px; 
+    width: 70%;
   }
+
 
   .locations-buttons button {
-    padding: 6px 12px; /* Reduce padding */
-    font-size: 12px; /* Reduce font size */
+    padding: 10px 24px; /* Adjust padding */
+    font-size: 13px; /* Adjust font size */
     margin-bottom: 0;
-  }
-
-  .locations-buttons {
-    gap: 5px; 
+    font-weight: 500;
   }
 }
