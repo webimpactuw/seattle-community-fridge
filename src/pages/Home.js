@@ -72,8 +72,8 @@ function Home() {
           </p>
         </div>
 
-        <footer style={{ backgroundColor: '#DDA15E',  padding: '20px 20px', textAlign: 'center', width: '100%', height: '50px', marginTop: ' 60px' }}>
-        </footer>
+        {/* <footer style={{ backgroundColor: '#DDA15E',  textAlign: 'center', width: '100%', height: '50px', position: '100vh'  }}>
+        </footer> */}
       </div>
     </body>
   )

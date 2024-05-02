@@ -23,7 +23,7 @@
     display: flex;
     justify-content: space-evenly; /* Align items to the center horizontally */
     align-items: center; /* Align items to the center vertically */
-    gap: 100px; /* Space between items */
+    gap: 200px; /* Space between items */
   }
 
   .top-row-photos img {
@@ -33,33 +33,36 @@
   .picture-captions {
     margin-top: 60px;
     display: flex;
-    gap: 650px;
+    justify-content: space-between; /* Ensures equal space between items */
   }
-
+  
   .picture-captions p {
     color: #606C38;
     font-weight: 600;
+    margin: 0 220px; /* Adjust the horizontal margin to create space between items */
+    flex-grow: 1; /* Allow items to grow to occupy available space */
+    text-align: center; /* Center-align the text within each item */
   }
+  
   
   .row-text {
     display: flex; /* Use flexbox to align items horizontally */
     justify-content: space-evenly; /* Space items evenly along the main axis */
-    gap: 150px;
+    margin: 0 200px;
   }
 
   .small-paragraph {
     font-size: 20px;
     flex: 1; /* Allow paragraphs to grow and shrink within the flex container */
     max-width: 20%; /* Limit the maximum width of the paragraphs */
-    margin: 0;
+    margin: 10 -70px;
     padding: 0;
   }
 
 
   .options {
     display: flex;
-    justify-content: space-evenly; 
-    flex-wrap: wrap; 
+    justify-content: space-between; 
   }
   
   .get-involved-button {
@@ -73,78 +76,82 @@
     text-decoration: none;
     font-size: 20px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    margin: 0 235px;
   }
   
   .get-involved-button:hover {
     background-color: #07090a;
     transition: 0.3s ease-in;
   }
-  
-  
-  @media only screen and (max-width: 650px) {
-    .get-involved {
-      width: 50%;
-    }
 
-    .top-row-photos {
-      display: flex; /* Use flexbox to align images horizontally */
-      justify-content: space-around; /* Distribute space evenly between images */
-      flex-wrap: wrap; /* Allow images to wrap to the next line if necessary */
-    }
+  .container {
+    display: flex;
+    align-items: center; 
+  }
   
-    /* CSS for the images */
-    .involved-photo {
-      max-width: 100%; /* Ensure images don't exceed the width of their container */
-      height: auto; /* Maintain aspect ratio */
-      margin-bottom: 10px; /* Add some space between images */
-      width: 200px;
-    }
+  .pickup-photo {
+    display: inline-block; /* Display the image as inline-block */
+    vertical-align: middle; /* Align the image vertically with the text */
+    margin-right: 300px;
+  }
 
-    .options {
-      flex-direction: column;
-      gap: 10px; 
-    }
-  
-    .get-involved {
-      align-items: center; 
-    }
+.food-pickup {
+  display: flex; /* Display the div as inline-block */
+  vertical-align: middle; /* Align the div vertically with the text */
+  margin-left: 10px; /* Adjust the left margin as needed */
 }
+ 
+  
+  @media only screen and (max-width: 600px) {
+    .get-involved h2 {
+      font-size: 20px; /* Reduce font size for smaller screens */
+    }
+  
+    .picture-captions p {
+      font-size: 12px; /* Reduce font size for smaller screens */
+    }
+  
+    .small-paragraph {
+      font-size: 12px; /* Reduce font size for smaller screens */
+    }
+  
+    .options {
+      flex-direction: column; /* Stack buttons vertically */
+      align-items: center; /* Center buttons horizontally */
+    }
+  
+    .get-involved-button {
+      width: 100%; /* Make buttons full width */
+      max-width: 200px; /* Limit maximum width */
+    }
+  }
 
-@media screen and (min-width: 900px) {
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
   .involved-photo {
-    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    max-width: 60%; /* Ensure images don't exceed the width of their container */
     height: auto; /* Maintain aspect ratio */
     margin-bottom: 10px; /* Add some space between images */
-    width: 200px;
+    width: 100px;
   }
-}
-
-  
-@media screen and (min-width: 1000px) {
 
   .top-row-photos {
     gap: 400px;
   }
 
-
-
-  .involved-photo {
-    max-width: 100%; /* Ensure images don't exceed the width of their container */
-    height: auto; /* Maintain aspect ratio */
-    margin-bottom: 10px; /* Add some space between images */
-    width: 600px;
-  }
-
   .get-involved-button {
+    justify-content: space-between;
     margin-top: 60px;
     height: 70px;
     width: 200px;
   }
 
   .options {
-    gap: 760px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 200px;
   }
 }
+
 
 @media screen and (min-width: 1600px) {
   

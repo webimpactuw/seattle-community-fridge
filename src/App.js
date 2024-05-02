@@ -5,6 +5,7 @@ import Aboutus from './pages/Aboutus';
 import GetInvolved from './pages/GetInvolved';
 import Guidelines from './pages/Guidelines';
 import Contact from './pages/Contact';
+import Footer from'./components/Footer';
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -25,6 +26,7 @@ function App() {
         <Route path = "/Contact" exact element = {<Contact/>} />
       </Routes>
       </Router>
+      <Footer/>
     </div>
   );
 }

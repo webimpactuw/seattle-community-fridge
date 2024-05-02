@@ -1,7 +1,6 @@
 .home {
-  width: auto;
+  width: 100vw;
   min-height: 120vh;
-  overflow-y: auto;
   display: flex;
   justify-content: center;
   align-items:  center;
@@ -173,7 +172,9 @@ body {
   border: none;
 }
 
-
+.get-involved {
+  margin-bottom: 40px;
+}
 
 .free-food-text,
   .home .get-involved-text {

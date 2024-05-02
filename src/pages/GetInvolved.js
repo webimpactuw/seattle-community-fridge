@@ -3,6 +3,7 @@ import '../styles/GetInvolved.css';
 import FridgeDonationImage from '../assets/fridge-donation.png';
 import FridgeHostingImage from '../assets/fridge-hosting.png';
 import FoodDonationImage from '../assets/food-donation.png';
+import FoodPickup from '../assets/foodPickups.png';
 
 function GetInvolved() {
     return (
@@ -59,12 +60,13 @@ function GetInvolved() {
                     Etiam sodales maximus neque, sed ornare eros posuere porta. Nunc dapibus dui sed massa aliquet m
                 </p>
             </div>
-            <img src={FoodDonationImage} className='involved-photo'/>
+            <div className='container'>
+                <img src={FoodPickup} className='pickup-photo'/>
+                <div className='food-pickup'>
+                    <h2>Food Donation Pick-ups</h2>
+                </div>
+            </div>
 
-
-
-
-            
         </div>
       )
 }
