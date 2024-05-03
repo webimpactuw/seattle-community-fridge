@@ -73,6 +73,18 @@
   color: black;
   background-color: transparent; 
 }
+/* this is for the text box on the contact page */
+.form-group textarea {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid #838B5C;
+  font-size: 18px; 
+  color: black;
+  background-color: transparent;
+  height: 150px; 
+  overflow: auto; 
+}
 
 .button {
   background: #DDA15E;
