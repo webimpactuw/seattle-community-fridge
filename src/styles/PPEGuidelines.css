@@ -1,0 +1,37 @@
+.ppe-container {
+  width: 100%;
+  padding: 20px;
+  font-family: 'Aleo', serif;
+  color: #606C38;
+  text-align: center;
+}
+
+.ppe-container h1 {
+  font-size: 51px;
+  font-weight: 700;
+  color: #283618;
+  margin-bottom: 20px;
+}
+
+.ppe-container p {
+  font-size: 30px;
+  line-height: 36px;
+  margin-bottom: 20px;
+}
+
+.guidelines-text {
+  font-size: 22px;
+  line-height: 27px;
+  text-align: left;
+  margin: 20px auto;
+  max-width: 800px;
+  list-style-position: inside;
+}
+
+.guidelines-text li {
+  margin-bottom: 10px;
+}
+
+a {
+  color: #DDA15E;
+}

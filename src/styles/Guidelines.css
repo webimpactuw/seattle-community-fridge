@@ -1,0 +1,59 @@
+.guidelines-container {
+    font-family: 'Aleo', serif;
+    background: #FEFAE0;
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.guidelines-container h2 {
+    font-size: 53px;
+    font-weight: 700;
+    color: #283618;
+    margin-bottom: 30px;
+}
+
+.guidelines-container p {
+    color: #606C38;
+    font-size: 20px;
+    margin-bottom: 50px;
+    padding: 0 10%;
+}
+
+.guidelines-icons {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.guideline {
+    flex: 1;
+    min-width: 200px;
+    margin: 20px;
+    text-align: center;
+}
+
+.guideline img {
+    width: 150px;
+    height: 150px;
+}
+
+.guideline h3 {
+    font-size: 32px;
+    color: #606C38;
+    margin: 20px 0;
+}
+
+.guideline button {
+    font-family: 'Aleo', serif;
+    background: #606C38;
+    color: white;
+    border: 10px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.guideline button:hover {
+    background-color: #DDA15E;
+}
