@@ -3,11 +3,11 @@ import '../styles/Home.css';
 import { useState } from 'react';
 
 function Home() {
-  const [buttonClicked, setButtonClicked] = useState(false);
+  // const [buttonClicked, setButtonClicked] = useState(false);
 
-  const handleClick = () => {
-    setButtonClicked(true);
-  };
+  // const handleClick = () => {
+  //   setButtonClicked(true);
+  // };
   
   return (
     <body>
@@ -71,9 +71,6 @@ function Home() {
             Curabitur rutrum posuere augue, quis volutpat nunc porttitor eget. Mauris rutrum arcu at ipsum iaculis pharetra.
           </p>
         </div>
-
-        {/* <footer style={{ backgroundColor: '#DDA15E',  textAlign: 'center', width: '100%', height: '50px', position: '100vh'  }}>
-        </footer> */}
       </div>
     </body>
   )

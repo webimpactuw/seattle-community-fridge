@@ -1,32 +1,54 @@
-import React from 'react';
+import React, { useRef } from 'react';
+import emailjs from '@emailjs/browser';
 import '../styles/Contact.css';
 import emailIcon from '../assets/mail.png';
 import phoneIcon from '../assets/phone.png';
 import socialIcon from '../assets/social.png';
 
-function Contact() {
+
+  export const Contact = () => {
+    const form = useRef();
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs
+        .sendForm('service_q14kl8e', 'template_efygs8h', form.current, {
+          publicKey: 'OyqcDk5mQJswQ1GFY',
+        })
+        .then(
+          () => {
+            console.log('SUCCESS!');
+            form.current.reset();
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+          },
+        );
+    };
     return (
         <div className="contact-container">
             <h2>Get in touch</h2>
             <div className="contact-content">
-                <form className="contact-form">
+                
+                <form className="contact-form" ref={form} onSubmit={sendEmail}>
                     <div className="form-group">
                         <label htmlFor="name">Name</label>
-                        <input type="text" id="name" name="name" />
+                        <input type="text" name="user_name" />
                         <div className="line"></div>
                     </div>
                     <div className="form-group">
                         <label htmlFor="email">Email</label>
-                        <input type="email" id="email" name="email" />
+                        <input type="email" name="user_email" />
                         <div className="line"></div>
                     </div>
                     <div className="form-group">
                         <label htmlFor="message">Message</label>
-                        <textarea id="message" name="message"></textarea>
+                        <textarea id="message" name="message"/>
                         <div className="line"></div>
                     </div>
-                    <button type="submit">Submit</button>
+                    <input type="submit" value="Send"/>
                 </form>
+                
                 <div className="contact-info">
                     <div className="info-item">
                         <img src={emailIcon} alt="Email" />

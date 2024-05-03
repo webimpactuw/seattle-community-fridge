@@ -86,7 +86,7 @@
   overflow: auto; 
 }
 
-.button {
+input[type=submit] {
   background: #DDA15E;
   border-radius: 10px;
   color: #FFFFFF;
@@ -95,6 +95,8 @@
   display: block; 
   margin: 20px auto; 
 }
+
+
 
 .info-item {
   display: flex;
