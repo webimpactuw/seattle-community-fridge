@@ -7,6 +7,7 @@ import Guidelines from './pages/Guidelines';
 import Contact from './pages/Contact';
 import Footer from'./components/Footer';
 import PPEGuidelines from './pages/PPEGuidelines';
+import FridgeGuidelines from './pages/FridgeGuidlelines';
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -25,6 +26,7 @@ function App() {
         <Route path = "/GetInvolved" exact element = {<GetInvolved/>} />
         <Route path = "/Guidelines" exact element = {<Guidelines/>} />
         <Route path = "/Contact" exact element = {<Contact/>} />
+        <Route path = "/FridgeGuidelines" exact element = {<FridgeGuidelines/>} />
         <Route path = "/PPEGuidelines" exact element = {<PPEGuidelines/>} />
       </Routes>
       </Router>
@@ -32,5 +34,4 @@ function App() {
     </div>
   );
 }
-
 export default App;

@@ -46,7 +46,7 @@ import socialIcon from '../assets/social.png';
                         <textarea id="message" name="message"/>
                         <div className="line"></div>
                     </div>
-                    <input type="submit" value="Send"/>
+                    <input type="submit" value="Submit"/>
                 </form>
                 
                 <div className="contact-info">

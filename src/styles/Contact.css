@@ -73,6 +73,7 @@
   color: black;
   background-color: transparent; 
 }
+
 /* this is for the text box on the contact page */
 .form-group textarea {
   width: 100%;
@@ -87,11 +88,13 @@
 }
 
 input[type=submit] {
-  background: #DDA15E;
+  border: none;
+  float: left;
+  background:#606C38;
   border-radius: 10px;
   color: #FFFFFF;
   font-size: 24px; 
-  padding: 20px 40px; 
+  padding: 20px 60px; 
   display: block; 
   margin: 20px auto; 
 }

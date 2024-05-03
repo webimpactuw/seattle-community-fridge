@@ -2,13 +2,7 @@ import React from 'react'
 import '../styles/Home.css';
 import { useState } from 'react';
 
-function Home() {
-  // const [buttonClicked, setButtonClicked] = useState(false);
-
-  // const handleClick = () => {
-  //   setButtonClicked(true);
-  // };
-  
+function Home() {  
   return (
     <body>
       <div className="home">
