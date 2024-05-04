@@ -5,7 +5,7 @@ function PPEGuidelines() {
   return (
     <div className="ppe-container">
       <h1>Personal Protective Equipment (PPE) Guidelines</h1>
-      <p>For up to date CDC PPE guidelines, check out the <a href="https://www.cdc.gov">CDC PPE guidelines</a>.</p>
+      <h2>For up to date CDC PPE guidelines, check out the <a href="https://www.cdc.gov">CDC PPE guidelines</a>.</h2>
       <ul className="guidelines-text">
         <li>Before handling any equipment, please <a href="https://www.cdc.gov/handwashing">wash your hands</a> following CDC hand washing guidelines.</li>
         <li>King County residents have been advised to wear face coverings at any indoor or outdoor public space. For further instructions for wearing masks, see <a href="https://www.kingcounty.gov">King County's Guidance for Face Coverings</a>.</li>

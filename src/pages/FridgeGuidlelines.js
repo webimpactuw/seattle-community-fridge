@@ -1,6 +1,5 @@
 import React from 'react';
 import '../styles/FridgeGuidelines.css';
-import Star from '../assets/star.png';
 
 function FridgeGuidelines() {
   return (
