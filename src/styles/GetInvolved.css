@@ -15,31 +15,35 @@
 
   .involved-text {
     color: #606C38;
-
   }
 
   .top-row-photos {
-    height: 40vh;
     display: flex;
-    justify-content: space-evenly; /* Align items to the center horizontally */
-    align-items: center; /* Align items to the center vertically */
-    gap: 200px; /* Space between items */
+    justify-content: center; /* Center the images horizontally */
+    flex-wrap: wrap; 
+    gap: 200px;
+  }
+
+  .involved-photo {
+    max-width: 100%; /* Ensure images don't exceed the width of their container */
+    height: auto; /* Maintain aspect ratio while resizing */
+    margin: 5px; /* Add some space between images */
   }
 
   .top-row-photos img {
-    width: 450px;
+    width: 300px;
   }
 
   .picture-captions {
     margin-top: 60px;
     display: flex;
-    justify-content: space-between; /* Ensures equal space between items */
+    justify-content: space-evenly; /* Ensures equal space between items */
   }
   
   .picture-captions p {
     color: #606C38;
     font-weight: 600;
-    margin: 0 220px; /* Adjust the horizontal margin to create space between items */
+    margin: 0 150px; /* Adjust the horizontal margin to create space between items */
     flex-grow: 1; /* Allow items to grow to occupy available space */
     text-align: center; /* Center-align the text within each item */
   }
@@ -47,16 +51,19 @@
   
   .row-text {
     display: flex; /* Use flexbox to align items horizontally */
+    flex-direction: row;
     justify-content: space-evenly; /* Space items evenly along the main axis */
-    margin: 0 200px;
   }
 
   .small-paragraph {
+    justify-content: space-evenly;
     font-size: 20px;
     flex: 1; /* Allow paragraphs to grow and shrink within the flex container */
     max-width: 20%; /* Limit the maximum width of the paragraphs */
-    margin: 10 -70px;
     padding: 0;
+    margin: 0 -220px;
+    margin-bottom: 30px;
+    margin-top: 30px;
   }
 
 
@@ -71,12 +78,12 @@
     border: none;
     border-radius: 15px;
     cursor: pointer;
-    height: 70px;
+    height: 60px;
     width: 180px;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 23px;
     font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-    margin: 0 235px;
+    margin: 0 160px;
   }
   
   .get-involved-button:hover {
@@ -88,6 +95,16 @@
     display: flex;
     align-items: center; 
   }
+
+  .container  h2 {
+    color:#606C38;
+  }
+
+  .open-text {
+    display: flex;
+    justify-content: center;
+
+  }
   
   .pickup-photo {
     display: inline-block; /* Display the image as inline-block */
@@ -95,16 +112,40 @@
     margin-right: 300px;
   }
 
-.food-pickup {
-  display: flex; /* Display the div as inline-block */
-  vertical-align: middle; /* Align the div vertically with the text */
-  margin-left: 10px; /* Adjust the left margin as needed */
-}
+  .food-pickup {
+    display: flex; /* Display the div as inline-block */
+    vertical-align: middle; /* Align the div vertically with the text */
+    margin-left: 10px; /* Adjust the left margin as needed */
+    flex-direction: column;
+  }
+
+  .food-pickup p {
+    margin-top: 6px;
+    text-align: left;
+  }
+
+  .food-pickup button {
+    color: white;
+    background-color: #8a9b01;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    height: 60px;
+    width: 150px;
+    text-decoration: none;
+    font-size: 25px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  }
+
  
   
   @media only screen and (max-width: 600px) {
     .get-involved h2 {
       font-size: 20px; /* Reduce font size for smaller screens */
+    }
+
+    .top-row-photos {
+      width: 60px;
     }
   
     .picture-captions p {

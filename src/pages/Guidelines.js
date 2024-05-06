@@ -5,7 +5,6 @@ import PPF from '../assets/mitten.png';
 import Fridge from '../assets/fridge-opening.png';
 import Apron from '../assets/apron.png';
 import Weights from '../assets/weights.png';
-// need to put the other imports here for the right pictures then change the existing ones
 
 function Guidelines() {
     const navigate = useNavigate();  
@@ -28,12 +27,12 @@ function Guidelines() {
                 <div className="guideline">
                     <img src={Apron} alt="Volunteer Guidelines" />
                     <h3>Volunteer Guidelines</h3>
-                    <button>Learn More</button>
+                    <button onClick={() => navigate('/VolunteerGuidelines')}>Learn More</button>
                 </div>
                 <div className="guideline">
                     <img src={Weights} alt="Heavy Lifting Guidelines" />
                     <h3>Heavy Lifting Guidelines</h3>
-                    <button>Learn More</button>
+                    <button onClick={() => navigate('/VolunteerGuidelines')}>Learn More</button>
                 </div>
             </div>
         </div>

@@ -1,0 +1,50 @@
+.volunteer-container {
+  width: 100vw;
+  height: 100vh;
+  padding: 20px;
+  font-family: 'Aleo', serif;
+  color: #606C38;
+  text-align: center;
+}
+
+.volunteer-container h1 {
+  font-size: 51px;
+  font-weight: 700;
+  color: black;
+  margin-bottom: 50px;
+}
+
+.guidelines {
+  list-style-image: url('../assets/star.png');
+  color: black;
+  font-size: 22px;
+  line-height: 27px;
+  text-align: left;
+  margin: 20px auto;
+  max-width: 800px;
+  list-style-position: inside;
+}
+
+.guidelines li::marker {
+  width: 10px; 
+  height: 10px; 
+}
+
+
+.guidelines li {
+  margin-bottom: 30px;
+  font-size: 1.2em;
+  padding: 10px;
+}
+
+.heavy-lifting,
+.fridge-cleaning {
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+

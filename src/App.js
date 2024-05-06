@@ -8,6 +8,9 @@ import Contact from './pages/Contact';
 import Footer from'./components/Footer';
 import PPEGuidelines from './pages/PPEGuidelines';
 import FridgeGuidelines from './pages/FridgeGuidlelines';
+import VolunteerGuidelines from './pages/VolunteerGuidelines';
+import HeavyGuidelines from './pages/HeavyGuidelines';
+
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -27,6 +30,8 @@ function App() {
         <Route path = "/Guidelines" exact element = {<Guidelines/>} />
         <Route path = "/Contact" exact element = {<Contact/>} />
         <Route path = "/FridgeGuidelines" exact element = {<FridgeGuidelines/>} />
+        <Route path = "/VolunteerGuidelines" exact element = {<VolunteerGuidelines/>} />
+        <Route path = "/HeavyGuidelines" exact element = {<HeavyGuidelines/>} />
         <Route path = "/PPEGuidelines" exact element = {<PPEGuidelines/>} />
       </Routes>
       </Router>
