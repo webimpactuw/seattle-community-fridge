@@ -202,8 +202,13 @@ body {
 }
 
 
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
+  .homePage {
+    width: 100%;
+  }
+
   .home {
+    width: 100%;
     padding: 10px; 
     justify-content: center;
     align-items: center;

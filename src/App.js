@@ -17,6 +17,7 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   useEffect(() => {
     document.title = "Seattle Community Fridge"; // Set the website name
+    
   }, []); 
   return (
     <div className="App">
