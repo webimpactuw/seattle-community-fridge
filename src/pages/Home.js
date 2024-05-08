@@ -1,12 +1,13 @@
 import React from 'react'
 import '../styles/Home.css';
 import { useState } from 'react';
+import Footer from'../components/Footer';
 
 function Home() {  
   return (
     <body className='homePage'>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-      <div className="home">
+      <div className='homePage'>
         <div className="text-container">
           <div className="text-above"> 
             <p>
@@ -67,6 +68,7 @@ function Home() {
           </p>
         </div>
       </div>
+      <Footer/>
     </body>
   )
 }

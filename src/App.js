@@ -5,7 +5,6 @@ import Aboutus from './pages/Aboutus';
 import GetInvolved from './pages/GetInvolved';
 import Guidelines from './pages/Guidelines';
 import Contact from './pages/Contact';
-import Footer from'./components/Footer';
 import PPEGuidelines from './pages/PPEGuidelines';
 import FridgeGuidelines from './pages/FridgeGuidlelines';
 import VolunteerGuidelines from './pages/VolunteerGuidelines';
@@ -36,7 +35,6 @@ function App() {
         <Route path = "/PPEGuidelines" exact element = {<PPEGuidelines/>} />
       </Routes>
       </Router>
-      <Footer/>
     </div>
   );
 }

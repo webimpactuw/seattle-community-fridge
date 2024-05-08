@@ -38,7 +38,6 @@ body {
 }
 
 .text-above {
-  text-align: center;
   background-color: #FEFAE0; 
   color: #DDA15E; 
   margin-right: 60px;
@@ -64,7 +63,6 @@ body {
   border: none;
   margin: 20px auto; 
 }
-
 
 .our-fridges-line {
   width: 18%;
@@ -105,6 +103,11 @@ body {
 }
 
 .fridges-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.fridges-section h2 {
   text-align: center;
   margin-top: 20px;
 }
@@ -189,10 +192,12 @@ body {
 .free-food h2 {
   font-size: 40px; /* Adjust the font size as needed */
   margin-right: 190px;
+  color: #606C38;
 }
 
-.home .get-h2 {
+.get-h2 {
   margin-right: 340px;
+  color: #606C38;
 }
 
 
@@ -203,9 +208,9 @@ body {
 
 
 @media (max-width: 600px) {
-  .homePage {
+  /* .homePage {
     width: 100%;
-  }
+  } */
 
   .home {
     width: 100%;
