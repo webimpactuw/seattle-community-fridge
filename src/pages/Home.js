@@ -7,7 +7,7 @@ function Home() {
   return (
     <body className='homePage'>
       <meta name="viewport" content="width=device-width, initial-scale=1.0"></meta>
-      <div className='homePage'>
+      <div className='home'>
         <div className="text-container">
           <div className="text-above"> 
             <p>
