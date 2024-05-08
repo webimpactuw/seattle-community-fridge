@@ -53,7 +53,9 @@ function GetInvolved() {
                 </p>
             </div>
             <div className="options">
-                <button className="get-involved-button">Donate Now</button>
+                <a href='https://docs.google.com/forms/d/e/1FAIpQLSeeqreEHNOWvY3s3I6FYcyH79uJAwDObbx8RJqBMBcCvnUl3w/viewform' target='_blank'> 
+                    <button className="get-involved-button">Donate Now </button>
+                </a>
                 <button className="get-involved-button">Host Now</button>
                 <button className="get-involved-button">Donate Now</button>
             </div>

@@ -37,6 +37,9 @@ function VolunteerGuidelines() {
         <h1>Fridge Cleaning Log</h1>
         <p> Access our fridge cleaning log here.
         </p>
+        <a href='https://docs.google.com/spreadsheets/d/1fC75-x0yVxyjVkFyZ3_rRsdf53gXKTqEt90uSvSMcdI/edit#gid=1993839952' target='_blank'> 
+            <button className="get-involved-button">Donate Now </button>
+        </a>
       </div>
     </div>
     </body>
