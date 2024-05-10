@@ -229,37 +229,83 @@ body {
     text-align: center;
   }
 
+  .text-above-line {
+    width: 100%;
+  }
+
   .text-above p {
     font-size: 14px;
     margin-bottom: 10px;
   }
 
+  .our-fridges-line {
+    width: 20%;
+    margin-left: 27px;
+  }
+
   .fridges-section,
   .free-food,
   .get-involved {
+    justify-content: center;
     text-align: center; /* Center the content */
-    width: 80%; /* Set a smaller percentage width */
+    width: 100%; /* Set a smaller percentage width */
     max-width: 100%; /* Ensure it doesn't exceed the screen width */
     padding: 0;
   }
 
   .home h2,
   .fridges-section h2,
-  .free-food-header,
-  .get-involved-header {
-    font-size: 18px; 
+  .get-involved-header { 
+    margin-left: 10px;
+    font-size: 16px; 
+    text-align: center;
   }
+
+  .free-food-header {
+    margin-left: 30px;
+    font-size: 16px; 
+    text-align: center;
+  }
+
+
+  
+  .free-food h2,
+  .home .get-h2 {
+    margin-right: 0;
+    margin-left: 84px;
+    font-size: 16px; 
+  }
+
+  .get-line {
+    width: 23%;
+    margin-left: 94px;
+  }
+
+  .food-line { 
+    width: 20%;
+    margin-left: 82px;
+  }
+
+
+  .home .get-involved-text { 
+    margin-left: 120px;
+  }
+
 
   .free-food-text,
   .get-involved-text {
+    text-align: center;
+    margin-left: 100px;
     font-size: 14px;
     text-align: left;
     color: #606C38;
   }
 
+
   .map iframe {
+    margin-left: -65px;
     margin-top: 0;
-    width: 100%; 
+    width: 180%; 
     height: 200px; 
   }
 
@@ -271,6 +317,10 @@ body {
 
   .locations-buttons {
     gap: 5px; 
+  }
+
+  .footer {
+    width: 120%;
   }
 }
 
