@@ -13,6 +13,7 @@ import Social from '../assets/insta.png';
 function GetInvolved() {
     return (
         <div className="get-involved">
+
             <h2>Get Involved!</h2>
             <p className='involved-text'>
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit sed risus sed scelerisque. 
@@ -74,7 +75,7 @@ function GetInvolved() {
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </p>
-                    <button>
+                    <button className='apply'>
                         Apply
                     </button>
                 </div>
@@ -86,7 +87,7 @@ function GetInvolved() {
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </p>
-                    <button>
+                    <button className='apply'>
                         Apply
                     </button>
                 </div>
@@ -100,7 +101,7 @@ function GetInvolved() {
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </p>
-                    <button>
+                    <button className='apply'>
                         Apply
                     </button>
                 </div>
@@ -112,7 +113,7 @@ function GetInvolved() {
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </p>
-                    <button>
+                    <button className='apply'>
                         Apply
                     </button>
                 </div>
@@ -126,7 +127,7 @@ function GetInvolved() {
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </p>
-                    <button>
+                    <button className='apply'>
                         Apply
                     </button>
                 </div>
@@ -138,7 +139,7 @@ function GetInvolved() {
                     <p>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     </p>
-                    <button>
+                    <button className='apply'>
                         Apply
                     </button>
                 </div>

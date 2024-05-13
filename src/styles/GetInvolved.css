@@ -9,6 +9,10 @@
     height: 100%;
   }
 
+  body {
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+  }
+
   .get-involved h2 {
     font-size: 40px;
   }
@@ -158,6 +162,7 @@
     .top-row-photos {
       flex-direction: row;
     }
+
     .top-row-photos img {
         width: 50%; /* Make images responsive */
         max-width: 100px; /* Set max-width for smaller screens */
@@ -193,19 +198,20 @@
 
 
     .container {
+      margin-left: 0;
       display: flex;
-      align-items: center;
-      flex-direction: column; /* Stack containers vertically on smaller screens */
-      margin-bottom: 30px; /* Add space between containers */
-    }
+      align-items: center; /* Align items vertically */
+  }
 
   .pickup-photo {
+    margin-left: 10px;
     width: 50%; /* Make images responsive */
     max-width: 100px; /* Set max-width for smaller screens */
+    margin-right: 100px;
   }
 
   .food-pickup {
-      max-width: 200px; /* Limit container width */
+      max-width: 80px; /* Limit container width */
       text-align: center; /* Center-align content */
   }
 
@@ -214,12 +220,13 @@
   }
 
   .food-pickup p {
-      font-size: 14px; /* Reduce font size */
-      margin-bottom: 10px; /* Add space between paragraphs */
+      font-size: 12px; /* Reduce font size */
+        max-width: 100%; /* Allow paragraphs to fill container */
+        margin-bottom: 25px;
   }
 
-  .food-pickup button {
-      width: 100%; /* Make button full width */
+  .food-pickup .apply {
+      width: 100px; /* Make button full width */
       font-size: 16px; /* Reduce font size */
   }
 
