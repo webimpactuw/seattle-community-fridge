@@ -1,31 +1,37 @@
 export default {
-  name: 'dog',
-  title: 'Dog',
+  name: 'project',
+  title: 'Project',
   type: 'document',
   fields: [
-      {
-          name: 'name',
-          title: 'Name',
-          type: 'string',
-          validation: (Rule) => Rule.required()
-      },
-      {
-          name: 'image',
-          title: 'Image',
-          type: 'image',
-          validation: (Rule) => Rule.required()
-      },
-      {
-          name: 'age',
-          title: 'Age',
-          type: 'number',
-          validation: (Rule) => Rule.required()
-      },
-      {
-          name: 'breed',
-          title: 'Breed',
-          type: 'string',
-          validation: (Rule) => Rule.required()
-      }
-  ],
-}
+    {
+      name: 'name',
+      title: 'Name',
+      type: 'string'
+    },
+    {
+      name: 'body',
+      title: 'Body',
+      type: 'text'
+    },
+    {
+      name: 'image',
+      title: 'Image',
+      type: 'image',
+    },
+    {
+      name: 'link',
+      title: 'Link',
+      type: 'url'
+    },
+    {
+      name: 'projectUrl',
+      title: 'Project URL',
+      type: 'url',
+    },
+    {
+      name: 'deployed',
+      title: 'Deployed',
+      type: 'boolean',
+    }
+  ]
+};

@@ -27,7 +27,7 @@ import socialIcon from '../assets/social.png';
     };
     return (
         <div className="contact-container">
-            <h2>Get in touch</h2>
+            <h2 className='touch'>Get in touch</h2>
             <div className="contact-content">
                 
                 <form className="contact-form" ref={form} onSubmit={sendEmail}>
@@ -46,7 +46,7 @@ import socialIcon from '../assets/social.png';
                         <textarea id="message" name="message"/>
                         <div className="line"></div>
                     </div>
-                    <input type="submit" value="Submit"/>
+                    <input type="submit" value="Submit" className='submit-button'/>
                 </form>
                 
                 <div className="contact-info">
@@ -54,7 +54,7 @@ import socialIcon from '../assets/social.png';
                         <img src={emailIcon} alt="Email" />
                         <div>
                             <p>Email</p>
-                            <a className="contact-detail" href="mailto:seattlecommunityfridge@gmail.com" target="_blank" rel="noopener noreferrer">
+                            <a className="contact-email" href="mailto:seattlecommunityfridge@gmail.com" target="_blank" rel="noopener noreferrer">
                               seattlecommunityfridge@gmail.com
                             </a>
                         </div>

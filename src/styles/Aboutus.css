@@ -75,6 +75,59 @@ p {
 }
 
 
+@media (max-width: 600px) { 
+  .about-us {
+    max-width: 100%;
+  }
+
+
+  .about-photo {
+    margin-left: 16px;
+    max-width: 40%; /* Allow image to occupy full width on small screens */
+  }
+
+  .additional-photos {
+    height: 60px;
+    margin-top: 70px;
+    margin-left: 20px;
+    gap: 15px;
+  }
+  .additional-photos img {
+    max-width: 30%; /* Allow image to occupy full width on small screens */
+  }
+  
+
+  .aboutText {
+    font-size: 12px; /* Decrease font size further for small screens */
+  }
+
+  h2.about {
+    /* Styles for the h2 element with class 'about' */
+    font-size: 24px; /* Adjust font size as desired */
+    color: #333; /* Set text color */
+    text-align: center; /* Center text */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+  }
+
+  
+  p.aboutText {
+    /* Styles for the <p> element with class 'aboutText' */
+    font-size: 13px; /* Adjust font size as desired */
+    text-align: left; /* Align text to the left */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+    max-width: 90vw; /* Set a maximum width of 90% of the viewport width */
+    margin-left: 0;
+    margin-top: 0;
+  }
+
+  .about-bottom p {
+    font-size: 20px;
+  }
+  
+  
+
+}
+
 @media screen and (min-width: 1200px) {
   .aboutText {
     width: 80%; /* Increase width to 80% on screens wider than 1200px */

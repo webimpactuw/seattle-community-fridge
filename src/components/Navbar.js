@@ -10,7 +10,7 @@ function Navbar() {
     <div className='navbar'>
       <div className='leftSide' id={openLinks ? "open" : "close"}>
           <Link to="/" >
-            <div>
+            <div className='logo'>
               <img src={Logo} alt='Logo' className='Logo'/>
             </div>
           </Link>

@@ -10,6 +10,11 @@
   font-style: normal;
 }
 
+
+.logo img.Logo{
+  width: 60px;
+}
+
 .navbar .leftSide {
   flex: 50%;
   height: 100%;
@@ -50,7 +55,11 @@
 }
 
 /* Media query for smaller screens */
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
+
+  .logo img.Logo{
+    width: 80px;
+  }
   .navbar {
     height: 80px; /* Adjust height for smaller screens */
   }

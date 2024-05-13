@@ -141,31 +141,90 @@
   
   @media only screen and (max-width: 600px) {
     .get-involved h2 {
-      font-size: 20px; /* Reduce font size for smaller screens */
+      font-size: 30px; /* Reduce font size */
+    }
+  
+    .top-row-photos {
+        justify-content: center; /* Center the images horizontally */
+        gap: 10px; /* Reduce gap between images */
+      }
+
+    .involved-text 
+
+    .get-involved {
+      width: 50px;
+    }
+    
+    .top-row-photos {
+      flex-direction: row;
+    }
+    .top-row-photos img {
+        width: 50%; /* Make images responsive */
+        max-width: 100px; /* Set max-width for smaller screens */
+    }
+    
+    .picture-captions {
+        margin-top: 30px; /* Reduce margin */
+        justify-content: center; /* Center captions */
+    }
+    
+    .picture-captions p {
+        font-size: 16px; /* Reduce font size */
+        margin: 0 10px; /* Adjust margin */
+    }
+    
+    .small-paragraph {
+        font-size: 13px; /* Reduce font size */
+        max-width: 100%; /* Allow paragraphs to fill container */
+        margin: 0; /* Remove margins */
+    }
+    
+    .options {
+        flex-direction: row; /* Stack options vertically on smaller screens */
+        align-items: center; /* Center options vertically */
+        gap: 35px;
+    }
+    
+    .get-involved-button {
+        width: 100%; /* Make button full width */
+        margin: 20px 0; /* Add vertical margin */
+        font-size: 20px; /* Reduce font size */
     }
 
-    .top-row-photos {
-      width: 60px;
+
+    .container {
+      display: flex;
+      align-items: center;
+      flex-direction: column; /* Stack containers vertically on smaller screens */
+      margin-bottom: 30px; /* Add space between containers */
     }
-  
-    .picture-captions p {
-      font-size: 12px; /* Reduce font size for smaller screens */
-    }
-  
-    .small-paragraph {
-      font-size: 12px; /* Reduce font size for smaller screens */
-    }
-  
-    .options {
-      flex-direction: column; /* Stack buttons vertically */
-      align-items: center; /* Center buttons horizontally */
-    }
-  
-    .get-involved-button {
-      width: 100%; /* Make buttons full width */
-      max-width: 200px; /* Limit maximum width */
-    }
+
+  .pickup-photo {
+    width: 50%; /* Make images responsive */
+    max-width: 100px; /* Set max-width for smaller screens */
   }
+
+  .food-pickup {
+      max-width: 200px; /* Limit container width */
+      text-align: center; /* Center-align content */
+  }
+
+  .food-pickup h2 {
+      font-size: 20px; /* Reduce font size */
+  }
+
+  .food-pickup p {
+      font-size: 14px; /* Reduce font size */
+      margin-bottom: 10px; /* Add space between paragraphs */
+  }
+
+  .food-pickup button {
+      width: 100%; /* Make button full width */
+      font-size: 16px; /* Reduce font size */
+  }
+
+    
+}
 
 @media only screen and (min-width: 601px) and (max-width: 1200px) {
   .involved-photo {
