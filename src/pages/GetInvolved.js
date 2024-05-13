@@ -41,8 +41,7 @@ function GetInvolved() {
             </div>
             <div className='row-text'>
                 <p className='small-paragraph'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                    This form is to compile a list of our fridge donors to be taken to hosts as they come up.  
                 </p>
                 <p className='small-paragraph'>
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
@@ -57,7 +56,10 @@ function GetInvolved() {
                 <a href='https://docs.google.com/forms/d/e/1FAIpQLSeeqreEHNOWvY3s3I6FYcyH79uJAwDObbx8RJqBMBcCvnUl3w/viewform' target='_blank'> 
                     <button className="get-involved-button">Donate Now </button>
                 </a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSdJO3rbuBtQ6Lw2Ppc0gIEGp0hEXBmmvGmAomK3o034P30o2A/viewform" target='_blank'>
                 <button className="get-involved-button">Host Now</button>
+                </a>
+                
                 <button className="get-involved-button">Donate Now</button>
             </div>
 
