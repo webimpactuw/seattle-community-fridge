@@ -1,2 +1,9 @@
-import docSchema from './documents/doc'
-export const schemaTypes = [docSchema];
+import { eventType } from "./eventType";
+import { aboutUsPhotos } from "./aboutUsPhotos";
+import { aboutUsTopPhoto } from "./aboutUsTopPhoto";
+
+export const schemaTypes = [
+  eventType,
+  aboutUsPhotos,
+  aboutUsTopPhoto
+]
