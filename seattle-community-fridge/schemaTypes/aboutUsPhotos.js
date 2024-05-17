@@ -9,6 +9,12 @@ export const aboutUsPhotos = defineType({
       name: 'image',
       type: 'image',
       title: 'AboutPhoto',
+    }),
+    defineField({
+      name: 'bottomTextbox',
+      type: 'array',
+      title: 'Event Details',
+      of: [{ type: 'block' }],
     })
   ],
 });
