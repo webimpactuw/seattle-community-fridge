@@ -1,3 +1,9 @@
+/*
+object-assign
+(c) Sindre Sorhus
+@license MIT
+*/
+
 /*!
  * is-plain-object <https://github.com/jonschlinkert/is-plain-object>
  *
