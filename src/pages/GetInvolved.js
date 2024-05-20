@@ -1,5 +1,6 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react';
 import '../styles/GetInvolved.css';
+import sanityClient from '../sanityClient';
 import FridgeDonationImage from '../assets/fridge-donation.png';
 import FridgeHostingImage from '../assets/fridge-hosting.png';
 import FoodDonationImage from '../assets/food-donation.png';
@@ -11,14 +12,77 @@ import Apron from '../assets/apron.png';
 import Social from '../assets/insta.png';
 
 function GetInvolved() {
+    const [foodPickupContent, setFoodPickupContent] = useState(null);
+    const [involvedTopText, setInvolvedTopText] = useState(null);
+    const [openRolesText, setOpenRolesText] = useState(null);
+    const [fridgeCleaningDesc, setFridgeCleaningDesc] = useState(null);
+    const [shelterBuldingContent, setShelterBuldingContent] = useState(null);
+    const [foodHost, setFoodHost] = useState(null);
+    const [volunteerCoordin, setVolunteerCoordin] = useState(null);
+    const [socialMedia, setSocialMedia] = useState(null);
+
+
+    useEffect(() => {
+      sanityClient
+        .fetch(`*[_type == "foodDonationPickupDesc"]{content}`)
+        .then((data) => setFoodPickupContent(data[0].content))
+        .catch(console.error);
+  
+      sanityClient
+        .fetch(`*[_type == "involved"]{content}`)
+        .then((data) => setInvolvedTopText(data[0].content))
+        .catch(console.error);
+  
+      sanityClient
+        .fetch(`*[_type == "opentext"]{content}`)
+        .then((data) => setOpenRolesText(data[0].content))
+        .catch(console.error);
+  
+      sanityClient
+        .fetch(`*[_type == "descriptionclean"]{content}`)
+        .then((data) => setFridgeCleaningDesc(data[0].content))
+        .catch(console.error);
+
+        sanityClient
+        .fetch(`*[_type == "descriptionbuild"]{content}`)
+        .then((data) => setShelterBuldingContent(data[0].content))
+        .catch(console.error);
+
+        sanityClient
+        .fetch(`*[_type == "descriptionhost"]{content}`)
+        .then((data) => setFoodHost(data[0].content))
+        .catch(console.error);
+        
+        sanityClient
+        .fetch(`*[_type == "descriptionVolunteer"]{content}`)
+        .then((data) => setVolunteerCoordin(data[0].content))
+        .catch(console.error);
+
+        sanityClient
+        .fetch(`*[_type == "descriptionSocialMedia"]{content}`)
+        .then((data) => setSocialMedia(data[0].content))
+        .catch(console.error);
+
+
+
+    }, []);
     return (
         <div className="get-involved">
 
             <h2>Get Involved!</h2>
-            <p className='involved-text'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit sed risus sed scelerisque. 
-            Etiam sodales maximus neque, sed ornare eros posuere porta. Nunc dapibus dui sed massa aliquet m
-            </p>
+            <div >
+                {involvedTopText ? (
+                <div>
+                    {involvedTopText.map((block, index) => (
+                    <p  className='involved-text' key={index}>{block.children[0].text}</p>
+                    ))}
+                </div>
+                ) : (
+                <p>
+                    Loading...
+                </p>
+                )}
+            </div>
             <div className='top-row-photos'> 
                 <img src={FridgeDonationImage} className='involved-photo' alt='fridge'/>
                 <img src={FridgeHostingImage} className='involved-photo' alt='fridge'/>
@@ -65,30 +129,51 @@ function GetInvolved() {
 
             <h2>Open Roles</h2>
             <div className='open-text'>
+                {openRolesText ? (
+                <div>
+                    {openRolesText.map((block, index) => (
+                    <p key={index}>{block.children[0].text}</p>
+                    ))}
+                </div>
+                ) : (
                 <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit sed risus sed scelerisque. 
-                    Etiam sodales maximus neque, sed ornare eros posuere porta. Nunc dapibus dui sed massa aliquet m
+                    Loading...
                 </p>
+                )}
             </div>
             <div className='container'>
-                <img src={FoodPickup} className='pickup-photo' alt='pickup'/>
-                <div className='food-pickup'>
-                    <h2>Food Donation Pick-ups</h2>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    </p>
-                    <button className='apply'>
-                        Apply
-                    </button>
-                </div>
+        <img src={FoodPickup} className='pickup-photo' alt='pickup'/>
+        <div className='food-pickup'>
+          <h2>Food Donation Pick-ups</h2>
+          {foodPickupContent ? (
+            <div>
+              {foodPickupContent.map((block, index) => (
+                <p key={index}>{block.children[0].text}</p>
+              ))}
             </div>
+          ) : (
+            <p>
+              Loading...
+            </p>
+          )}
+          <button className='apply'>Apply</button>
+        </div>
+      </div>
 
             <div className='container'>
                 <div className='food-pickup'>
                     <h2>Fridge Cleaning</h2>
-                    <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                    </p>
+                    {fridgeCleaningDesc ? (
+                        <div>
+                            {fridgeCleaningDesc.map((block, index) => (
+                            <p key={index}>{block.children[0].text}</p>
+                            ))}
+                        </div>
+                        ) : (
+                        <p>
+                            Loading...
+                        </p>
+                        )}
                     <button className='apply'>
                         Apply
                     </button>
@@ -100,9 +185,17 @@ function GetInvolved() {
                 <img src={Hammer} className='pickup-photo'/>
                 <div className='food-pickup'>
                     <h2>Shelter Building + Fridge Transport</h2>
+                    {shelterBuldingContent ? (
+                    <div>
+                        {shelterBuldingContent.map((block, index) => (
+                        <p key={index}>{block.children[0].text}</p>
+                        ))}
+                    </div>
+                    ) : (
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Loading...
                     </p>
+                    )}
                     <button className='apply'>
                         Apply
                     </button>
@@ -112,9 +205,17 @@ function GetInvolved() {
             <div className='container'>
                 <div className='food-pickup'>
                     <h2>Host/Food Donor Outreach</h2>
+                    {foodHost ? (
+                    <div>
+                        {foodHost.map((block, index) => (
+                        <p key={index}>{block.children[0].text}</p>
+                        ))}
+                    </div>
+                    ) : (
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Loading...
                     </p>
+                    )}
                     <button className='apply'>
                         Apply
                     </button>
@@ -126,9 +227,17 @@ function GetInvolved() {
                 <img src={Apron} className='pickup-photo'/>
                 <div className='food-pickup'>
                     <h2>Volunteer Coordinator</h2>
+                    {volunteerCoordin ? (
+                    <div>
+                        {volunteerCoordin.map((block, index) => (
+                        <p key={index}>{block.children[0].text}</p>
+                        ))}
+                    </div>
+                    ) : (
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Loading...
                     </p>
+                    )}
                     <button className='apply'>
                         Apply
                     </button>
@@ -138,9 +247,17 @@ function GetInvolved() {
             <div className='container'>
                 <div className='food-pickup'>
                     <h2>Social Media Manager</h2>
+                    {socialMedia ? (
+                    <div>
+                        {socialMedia.map((block, index) => (
+                        <p key={index}>{block.children[0].text}</p>
+                        ))}
+                    </div>
+                    ) : (
                     <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                        Loading...
                     </p>
+                    )}
                     <button className='apply'>
                         Apply
                     </button>

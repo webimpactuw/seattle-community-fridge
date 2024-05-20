@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/seattle-community-fridge/static/css/main.8e625aca.css",
+    "main.js": "/seattle-community-fridge/static/js/main.96c0763e.js",
+    "static/js/796.c483cd45.chunk.js": "/seattle-community-fridge/static/js/796.c483cd45.chunk.js",
+    "static/js/165.ef78bfe0.chunk.js": "/seattle-community-fridge/static/js/165.ef78bfe0.chunk.js",
+    "static/js/453.0b8377ca.chunk.js": "/seattle-community-fridge/static/js/453.0b8377ca.chunk.js",
+    "static/media/appleCart.png": "/seattle-community-fridge/static/media/appleCart.489c9bcdc9f5bce159c3.png",
+    "static/media/apron.png": "/seattle-community-fridge/static/media/apron.690a846dd393b0270f98.png",
+    "static/media/weights.png": "/seattle-community-fridge/static/media/weights.d4d584be983f089cc162.png",
+    "static/media/mitten.png": "/seattle-community-fridge/static/media/mitten.ba161801948c6cd512b8.png",
+    "static/media/foodPickups.png": "/seattle-community-fridge/static/media/foodPickups.5a02720499ef6b40d8e7.png",
+    "static/media/fridge-donation.png": "/seattle-community-fridge/static/media/fridge-donation.c9018a09f15d02da9425.png",
+    "static/media/fridge-hosting.png": "/seattle-community-fridge/static/media/fridge-hosting.af51ddc1d3b18f904940.png",
+    "static/media/fridge-opening.png": "/seattle-community-fridge/static/media/fridge-opening.d5541299f86169b3046e.png",
+    "static/media/insta.png": "/seattle-community-fridge/static/media/insta.fa082526e9a5c6f4cf02.png",
+    "static/media/food-donation.png": "/seattle-community-fridge/static/media/food-donation.b69a41f86faa49d6d24a.png",
+    "static/media/cleaningBottle.png": "/seattle-community-fridge/static/media/cleaningBottle.0017167638fe2e13ee5d.png",
+    "static/media/hammer.png": "/seattle-community-fridge/static/media/hammer.d3e87d5b69ccb1f60236.png",
+    "static/media/social.png": "/seattle-community-fridge/static/media/social.41476361281f0297c633.png",
+    "static/media/SCFLOGO2.png": "/seattle-community-fridge/static/media/SCFLOGO2.cb592369664632c6f2fb.png",
+    "static/media/mail.png": "/seattle-community-fridge/static/media/mail.ed60232d4e3a25fc9f0a.png",
+    "static/media/phone.png": "/seattle-community-fridge/static/media/phone.39489d68f31db7c1bdda.png",
+    "index.html": "/seattle-community-fridge/index.html",
+    "main.8e625aca.css.map": "/seattle-community-fridge/static/css/main.8e625aca.css.map",
+    "main.96c0763e.js.map": "/seattle-community-fridge/static/js/main.96c0763e.js.map",
+    "796.c483cd45.chunk.js.map": "/seattle-community-fridge/static/js/796.c483cd45.chunk.js.map",
+    "165.ef78bfe0.chunk.js.map": "/seattle-community-fridge/static/js/165.ef78bfe0.chunk.js.map",
+    "453.0b8377ca.chunk.js.map": "/seattle-community-fridge/static/js/453.0b8377ca.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e625aca.css",
+    "static/js/main.96c0763e.js"
+  ]
+}

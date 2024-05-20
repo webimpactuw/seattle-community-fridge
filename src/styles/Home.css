@@ -17,6 +17,8 @@
 
 body {
   width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 .home h2 {
@@ -204,6 +206,10 @@ body {
 .locations-buttons button:hover {
   background-color:  #606C38; 
   transition: 0.5s;
+}
+
+.footer {
+  box-sizing: border-box;
 }
 
 

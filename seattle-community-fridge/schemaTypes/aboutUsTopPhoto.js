@@ -9,13 +9,7 @@ export const aboutUsTopPhoto = defineType({
       name: 'image',
       type: 'image',
       title: 'AboutPhoto',
-    })
-    // defineField({
-    //   name: 'details',
-    //   type: 'array',
-    //   title: 'Event Details',
-    //   of: [{ type: 'block' }],
-    // })
+    }),
   ],
 });
  

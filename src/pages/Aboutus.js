@@ -1,16 +1,18 @@
 import sanityClient from '../sanityClient';
 import React, { useEffect, useState } from 'react';
 import '../styles/Aboutus.css';
-import AboutImage from '../assets/images.jpg'; // Import your image here
+import BlockContent from '@sanity/block-content-to-react';
+// import AboutImage from '../assets/images.jpg'; // Import your image here
 function Aboutus() {
   const [additionalPhotos, setAdditionalPhotos] = useState([]);
   const [aboutUsTopPhoto, setAboutUsTopPhoto] = useState([]);
+  const [aboutBottomText, setAboutBottomText] = useState([]);
 
   useEffect(() => {
     sanityClient
       .fetch(`*[_type == "aboutPhoto"]{
         _id,
-        "imageUrl": image.asset->url
+        "imageUrl": image.asset->url,
       }`)
       .then((data) => setAdditionalPhotos(data))
       .catch(console.error);
@@ -21,6 +23,14 @@ function Aboutus() {
         "imageUrl": image.asset->url
       }`)
       .then((data) => setAboutUsTopPhoto(data))
+      .catch(console.error);
+
+    sanityClient
+      .fetch(`*[_type == "aboutBottomText"]{
+        _id,
+        content
+      }`)
+      .then((data) => setAboutBottomText(data))
       .catch(console.error);
   }, []);
 
@@ -53,14 +63,9 @@ function Aboutus() {
                   ))}
       </div>
       <div className='about-bottom'>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit sed risus sed scelerisque. 
-          Etiam sodales maximus neque, sed ornare eros posuere porta. Nunc dapibus dui sed massa aliquet maximus. 
-          Nunc elementum, erat nec suscipit varius, est est lobortis neque, in tempus erat est sit amet lacus. 
-          Donec ipsum eros, vestibulum at massa ut, tempor porttitor nisl. Mauris rhoncus convallis accumsan. 
-          Curabitur rutrum posuere augue, 
-          quis volutpat nunc porttitor eget. Mauris rutrum arcu at ipsum iaculis pharetra. 
-        </p>
+        {aboutBottomText.length > 0 && aboutBottomText.map((text) => (
+          <BlockContent key={text._id} blocks={text.content} />
+        ))}
       </div>
     </div>
   );

@@ -1,5 +1,21 @@
-.footer {
-  margin-top: auto;
-  background-color: #DDA15E;
-  height: 80px;
+/* Footer.css */
+body, html {
+  margin: 0;
+  padding: 0;
+  width: 110vw;
 }
+
+.footer {
+  height: 80px;
+  width: 100%;
+  background-color: #DDA15E;; /* Example background color */
+  color: white; /* Example text color */
+  padding: 20px; /* Example padding */
+  text-align: center; /* Example text alignment */
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+
+
+
+
