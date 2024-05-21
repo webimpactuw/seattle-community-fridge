@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/seattle-community-fridge/static/css/main.8e625aca.css",
-    "main.js": "/seattle-community-fridge/static/js/main.96c0763e.js",
+    "main.css": "/seattle-community-fridge/static/css/main.79f6cfa7.css",
+    "main.js": "/seattle-community-fridge/static/js/main.3f13a72e.js",
     "static/js/796.c483cd45.chunk.js": "/seattle-community-fridge/static/js/796.c483cd45.chunk.js",
     "static/js/165.ef78bfe0.chunk.js": "/seattle-community-fridge/static/js/165.ef78bfe0.chunk.js",
     "static/js/453.0b8377ca.chunk.js": "/seattle-community-fridge/static/js/453.0b8377ca.chunk.js",
@@ -22,14 +22,14 @@
     "static/media/mail.png": "/seattle-community-fridge/static/media/mail.ed60232d4e3a25fc9f0a.png",
     "static/media/phone.png": "/seattle-community-fridge/static/media/phone.39489d68f31db7c1bdda.png",
     "index.html": "/seattle-community-fridge/index.html",
-    "main.8e625aca.css.map": "/seattle-community-fridge/static/css/main.8e625aca.css.map",
-    "main.96c0763e.js.map": "/seattle-community-fridge/static/js/main.96c0763e.js.map",
+    "main.79f6cfa7.css.map": "/seattle-community-fridge/static/css/main.79f6cfa7.css.map",
+    "main.3f13a72e.js.map": "/seattle-community-fridge/static/js/main.3f13a72e.js.map",
     "796.c483cd45.chunk.js.map": "/seattle-community-fridge/static/js/796.c483cd45.chunk.js.map",
     "165.ef78bfe0.chunk.js.map": "/seattle-community-fridge/static/js/165.ef78bfe0.chunk.js.map",
     "453.0b8377ca.chunk.js.map": "/seattle-community-fridge/static/js/453.0b8377ca.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.8e625aca.css",
-    "static/js/main.96c0763e.js"
+    "static/css/main.79f6cfa7.css",
+    "static/js/main.3f13a72e.js"
   ]
 }
