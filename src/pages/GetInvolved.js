@@ -20,9 +20,27 @@ function GetInvolved() {
     const [foodHost, setFoodHost] = useState(null);
     const [volunteerCoordin, setVolunteerCoordin] = useState(null);
     const [socialMedia, setSocialMedia] = useState(null);
+    const [fridge, setfridge] = useState(null);
+    const [donate, setDonate] = useState(null);
+    const [fridgeDonate, setfridgeDonate] = useState(null);
 
 
     useEffect(() => {
+        sanityClient
+        .fetch(`*[_type == "fridgeDonate"]{content}`)
+        .then((data) => setfridgeDonate(data[0].content))
+        .catch(console.error);
+
+        sanityClient
+        .fetch(`*[_type == "fridgeHost"]{content}`)
+        .then((data) => setfridge(data[0].content))
+        .catch(console.error);
+
+        sanityClient
+        .fetch(`*[_type == "foodDonate"]{content}`)
+        .then((data) => setDonate(data[0].content))
+        .catch(console.error);
+
       sanityClient
         .fetch(`*[_type == "foodDonationPickupDesc"]{content}`)
         .then((data) => setFoodPickupContent(data[0].content))
@@ -104,17 +122,42 @@ function GetInvolved() {
                 </p>
             </div>
             <div className='row-text'>
-                <p className='small-paragraph'>
+                {fridgeDonate ? (
+                    <div>
+                        {fridgeDonate.map((block, index) => (
+                        <p  className='small-paragraph' key={index}>{block.children[0].text}</p>
+                        ))}
+                    </div>
+                    ) : (
+                    <p>
+                        Loading...
+                    </p>
+                )}
+                {/* <p className='small-paragraph'>
                     This form is to compile a list of our fridge donors to be taken to hosts as they come up.  
+                </p> */}
+                {fridge ? (
+                <div>
+                    {fridge.map((block, index) => (
+                    <p  className='small-paragraph' key={index}>{block.children[0].text}</p>
+                    ))}
+                </div>
+                ) : (
+                <p>
+                    Loading...
                 </p>
-                <p className='small-paragraph'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                </p>
-                <p className='small-paragraph'>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
-                    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                </p>
+                )}
+                {donate ? (
+                    <div>
+                        {donate.map((block, index) => (
+                        <p  className='small-paragraph' key={index}>{block.children[0].text}</p>
+                        ))}
+                    </div>
+                    ) : (
+                    <p>
+                        Loading...
+                    </p>
+                )}
             </div>
             <div className="options">
                 <a href='https://docs.google.com/forms/d/e/1FAIpQLSeeqreEHNOWvY3s3I6FYcyH79uJAwDObbx8RJqBMBcCvnUl3w/viewform' target='_blank'> 

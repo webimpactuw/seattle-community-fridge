@@ -2,7 +2,7 @@ import { defineField, defineType } from 'sanity'
 
 export const volunteerCoord = defineType({
   name: 'descriptionVolunteer',
-  title: 'Volunteer Description',
+  title: 'Get Involved Volunteer Coordinator Description',
   type: 'document',
   fields: [
     defineField({

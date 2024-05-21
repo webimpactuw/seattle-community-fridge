@@ -1,12 +1,11 @@
 import sanityClient from '../sanityClient';
 import React, { useEffect, useState } from 'react';
 import '../styles/Aboutus.css';
-import BlockContent from '@sanity/block-content-to-react';
 // import AboutImage from '../assets/images.jpg'; // Import your image here
 function Aboutus() {
   const [additionalPhotos, setAdditionalPhotos] = useState([]);
   const [aboutUsTopPhoto, setAboutUsTopPhoto] = useState([]);
-  const [aboutBottomText, setAboutBottomText] = useState([]);
+  const [aboutBottomText, setAboutBottomText] = useState(null);
 
   useEffect(() => {
     sanityClient
@@ -25,12 +24,9 @@ function Aboutus() {
       .then((data) => setAboutUsTopPhoto(data))
       .catch(console.error);
 
-    sanityClient
-      .fetch(`*[_type == "aboutBottomText"]{
-        _id,
-        content
-      }`)
-      .then((data) => setAboutBottomText(data))
+      sanityClient
+      .fetch(`*[_type == "aboutBottomtext"]{content}`)
+      .then((data) => setAboutBottomText(data[0].content))
       .catch(console.error);
   }, []);
 
@@ -63,9 +59,17 @@ function Aboutus() {
                   ))}
       </div>
       <div className='about-bottom'>
-        {aboutBottomText.length > 0 && aboutBottomText.map((text) => (
-          <BlockContent key={text._id} blocks={text.content} />
-        ))}
+      {aboutBottomText ? (
+                <div>
+                    {aboutBottomText.map((block, index) => (
+                    <p  className='involved-text' key={index}>{block.children[0].text}</p>
+                    ))}
+                </div>
+                ) : (
+                <p>
+                    Loading...
+                </p>
+                )}
       </div>
     </div>
   );

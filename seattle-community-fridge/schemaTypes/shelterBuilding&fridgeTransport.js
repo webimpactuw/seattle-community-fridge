@@ -2,7 +2,7 @@ import { defineField, defineType } from 'sanity'
 
 export const shelterBuilding = defineType({
   name: 'descriptionbuild',
-  title: 'DescriptionBuild',
+  title: 'Get Involved Build Description',
   type: 'document',
   fields: [
     defineField({

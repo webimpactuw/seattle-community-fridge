@@ -2,7 +2,7 @@ import { defineField, defineType } from 'sanity'
 
 export const openRolesText = defineType({
   name: 'opentext',
-  title: 'OpenText',
+  title: 'Get Involved Open Roles Text',
   type: 'document',
   fields: [
     defineField({

@@ -10,7 +10,10 @@ import { shelterBuilding } from './shelterBuilding&fridgeTransport';
 import { foodHostDonor } from './host&foodDonorOutreach';
 import { volunteerCoord } from './volunteerCoord';
 import { socialManage } from './socialMediaManage';
-
+import { homeFree } from './homeFree';
+import { getInvolved } from './getInvolvedText';
+import { foodDonate } from './foodDonation';
+import { fridgeDonate } from './fridgeDonate';
 
 export const schemaTypes = [
   eventType,
@@ -35,5 +38,13 @@ export const schemaTypes = [
   
   volunteerCoord,
 
-  socialManage
+  socialManage,
+
+  homeFree,
+
+  getInvolved,
+
+  foodDonate,
+
+  fridgeDonate
 ]

@@ -1,9 +1,24 @@
 import '../styles/Home.css';
 import React, { useEffect, useState } from 'react';
 import Footer from '../components/Footer';
-
+import sanityClient from '../sanityClient';
 
 function Home() {
+  const [homeFood, sethomeFood] = useState(null);
+  const [getText, setgetText] = useState(null);
+
+  useEffect(() => {
+    sanityClient
+    .fetch(`*[_type == "homefood"]{content}`)
+    .then((data) => sethomeFood(data[0].content))
+    .catch(console.error);
+
+    sanityClient
+    .fetch(`*[_type == "getinvolved"]{content}`)
+    .then((data) => setgetText(data[0].content))
+    .catch(console.error);
+  }, []);
+
 
   return (
     <body className='homePage'>
@@ -45,11 +60,17 @@ function Home() {
             </span>
           </h2>
           <hr className='food-line'/>
-          <p className='free-food-text'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit sed risus sed scelerisque. Etiam sodales maximus neque, sed ornare eros posuere porta. Nunc dapibus dui sed massa aliquet maximus.
-            Nunc elementum, erat nec suscipit varius, est est lobortis neque, in tempus erat est sit amet lacus. Donec ipsum eros, vestibulum at massa ut, tempor porttitor nisl. Mauris rhoncus convallis accumsan.
-            Curabitur rutrum posuere augue, quis volutpat nunc porttitor eget. Mauris rutrum arcu at ipsum iaculis pharetra.
-          </p>
+          {homeFood ? (
+                <div>
+                    {homeFood.map((block, index) => (
+                    <p  className='free-food-text' key={index}>{block.children[0].text}</p>
+                    ))}
+                </div>
+                ) : (
+                <p>
+                    Loading...
+                </p>
+                )}
         </div>
         <div className='get-involved'>
           <h2 className='get-h2'>Get Involved
@@ -58,11 +79,17 @@ function Home() {
             </span>
           </h2>
           <hr className='get-line'/>
-          <p className='get-involved-text'>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris suscipit sed risus sed scelerisque. Etiam sodales maximus neque, sed ornare eros posuere porta. Nunc dapibus dui sed massa aliquet maximus.
-            Nunc elementum, erat nec suscipit varius, est est lobortis neque, in tempus erat est sit amet lacus. Donec ipsum eros, vestibulum at massa ut, tempor porttitor nisl. Mauris rhoncus convallis accumsan.
-            Curabitur rutrum posuere augue, quis volutpat nunc porttitor eget. Mauris rutrum arcu at ipsum iaculis pharetra.
-          </p>
+          {getText ? (
+                <div>
+                    {getText.map((block, index) => (
+                    <p  className='get-involved-text' key={index}>{block.children[0].text}</p>
+                    ))}
+                </div>
+                ) : (
+                <p>
+                    Loading...
+                </p>
+                )}
         </div>
       </div>
       <Footer />

@@ -1,8 +1,8 @@
 import { defineField, defineType } from 'sanity'
 
-export const getInvolvedTopText = defineType({
-  name: 'involved',
-  title: 'Get Involved Top Text',
+export const getInvolved = defineType({
+  name: 'getinvolved',
+  title: 'Homepage Get Involved',
   type: 'document',
   fields: [
     defineField({

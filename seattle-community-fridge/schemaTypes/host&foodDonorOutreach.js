@@ -2,7 +2,7 @@ import { defineField, defineType } from 'sanity'
 
 export const foodHostDonor = defineType({
   name: 'descriptionhost',
-  title: 'DescriptionHost',
+  title: 'Get Involved Host Description',
   type: 'document',
   fields: [
     defineField({

@@ -2,7 +2,7 @@ import { defineField, defineType } from 'sanity'
 
 export const fridgeCleaningDesc = defineType({
   name: 'descriptionclean',
-  title: 'DescriptionClean',
+  title: 'Get Involved Clean Description',
   type: 'document',
   fields: [
     defineField({
